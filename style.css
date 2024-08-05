@@ -1,0 +1,156 @@
+*{
+    margin: 0;
+    padding: 0;
+    
+    font-family: "Courier Prime", monospace;
+      
+}
+h1{
+    margin-top: 10px;
+}
+header{
+    background-color: rgb(53, 19, 19);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+
+
+}
+
+header button{
+    width: 80px;
+    height:40px;
+    border-radius: 10%;
+    margin: 5px;
+}
+
+.banner{
+    background-image: url(https://as2.ftcdn.net/v2/jpg/04/03/15/39/1000_F_403153989_K6GwszyZXKOgXc0P9KpZwOZqSXTvl6aw.jpg);
+    
+    width: 100%;
+    height:300px;
+    
+    background-size: cover;
+    
+}
+
+section{
+    background-color: bisque;
+    padding-top: 10px;
+}
+.row{
+    background-color:bisque;
+    width: 100%;
+    height: 650px;
+    display:flex;
+    justify-content:space-evenly;
+    padding-top: 10px;
+}
+
+.col{
+    background-color: rgb(53, 19, 19) ;
+    width: 320px;
+    height: 500px;
+    margin: 5px;
+    align-items: center;
+    color: white;
+    border-radius: 10%;2px
+    padding: 10px;
+    text-align: center;
+
+}
+
+.row img{
+    height: 450px;
+
+    padding-top: 10px;
+    border-radius: 10%;
+    width: 300px;
+    height:400px;
+
+}
+
+img:hover{
+    box-shadow: 3px 4px rgb(230, 156, 156);
+}
+
+/* descendent selector */
+section span{
+    color:chartreuse;
+    font-size: 15px;
+}
+
+section button{
+    background-color: rgb(229, 216, 219);
+    width: 100px;
+    height: 35px;
+    margin 10px;
+    border-radius: 10px;
+    color: rgb(132, 23, 86));
+    font-size: 15px;   
+}
+section button:hover{
+    color:rgb(229, 216, 219);
+    background-color: rgb(132, 23, 86);
+}
+footer{
+    background-color: rgb(89, 44, 44);
+    padding:20px;
+    display: flex;
+    flex-direction: start;
+    justify-content: space-between;
+    height: 150px;
+    padding-top: 10px;
+    color: azure;
+}
+
+footer h4{
+    color:rgb(147, 185, 185)
+}
+
+.loc{
+    text-align: right;
+}
+
+
+/* Media Query */
+
+@media screen and (max-width:400px){
+    *{
+        margin:0;
+        padding: 0;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+
+    }
+    header{
+        width: 400px;
+        background-color: crimson;
+        color: aquamarine;
+        padding: 0px;
+
+    }
+    nav{
+        width:400px ;
+        background-color: crimson;
+        margin: 0px;
+        padding: 0px;
+    }
+    .row{
+        background-color: blanchedalmond;
+        width: 400px;
+        height: 1200px;
+        display: flex;
+        flex-direction: column;
+
+    }
+    main{
+        width: 400px;
+    }
+    .col{
+        height: 600px;
+        width: 350px;
+        border: 3px solid black;
+        margin-left:23px;
+    }
+}
